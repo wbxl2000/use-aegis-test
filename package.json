@@ -1,0 +1,14 @@
+{
+  "name": "use-aegis-wbxl2000",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aegis-web-sdk": "^1.36.7"
+  }
+}
