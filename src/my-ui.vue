@@ -1,8 +1,5 @@
 <script lang="ts" setup>
-import { TUICallType } from "tuicall-engine-webrtc";
 import Aegis from "aegis-web-sdk";
-
-console.log(TUICallType);
 
 const aegis = new Aegis({
   id: "iHWefAYqDNAiuxNMQZ",
