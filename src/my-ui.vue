@@ -1,23 +1,12 @@
 <script lang="ts" setup>
-import Aegis from "aegis-web-sdk";
+import { loginSuccess } from './aegis';
 
-const aegis = new Aegis({
-  id: "iHWefAYqDNAiuxNMQZ",
-  reportApiSpeed: true, // 接口测速
-  reportAssetSpeed: true, // 静态资源测速
-  version: "1.4.1",
-});
-
-function loginSuccess(SDKAppID: number) {
-  aegis.reportEvent({
-    name: "login",
-    ext1: "login-success",
-    ext2: "webTUICallKit",
-    ext3: SDKAppID.toString()
-  });
-};
+function log() {
+  loginSuccess(123);
+}
 </script>
 
 <template>
-	<div @click="loginSuccess(123)"></div>
+  <!-- <button @click="loginSuccess(123)" > 1313 </button> -->
+  <button @click="log()"> t </button>
 </template>

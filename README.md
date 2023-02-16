@@ -6,6 +6,7 @@ import { myUI } from "use-aegis-test";
 </script>
   
 <template>
-  <myUI />
+  <div style="width: 100px; height: 100px; border: 1px solid saddlebrown;"> <myUI /> </div>
 </template>
+
 ```
