@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aegis-web-sdk": "^1.36.7"
+    "aegis-web-sdk": "^1.36.7",
+    "tuicall-engine-webrtc": "^1.3.4"
   },
   "devDependencies": {
     "typescript": "^4.9.5"

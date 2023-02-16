@@ -10,6 +10,8 @@ let Aegis = null;
 let aegisInstance = null;
 const aegisCdn = "https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js";
 
+import { TUICallType } from "tuicall-engine-webrtc";
+
 async function createAegis() {
   if (!Aegis) Aegis = await importUMD(aegisCdn);
   const aegis = new Aegis({
@@ -22,6 +24,7 @@ async function createAegis() {
 }
 
 export async function loginSuccess(SDKAppID: number) {
+  console.log(TUICallType);
   if (!aegisInstance) aegisInstance = await createAegis();
   aegisInstance.reportEvent({
     name: "login",
